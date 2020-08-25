@@ -243,7 +243,7 @@ footer p {
     margin: 10px 0;
 }
 
-#warning {
+#warning,#warning1 {
 	color: red;
 	font-size: 15px;
 	font-style: oblique;

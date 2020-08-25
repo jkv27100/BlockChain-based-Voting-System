@@ -14,11 +14,12 @@ signInButton.addEventListener('click', () => {
 const btn_signin = document.getElementById('signin');
 const btn_signup = document.getElementById('signup');
 const password = document.getElementById('pass');
+const password1 = document.getElementById('pass1');
 const warning = document.getElementById('warning');
 
 
 btn_signin.addEventListener('click',(e) => {
-	e.preventDefault();
+	
 	if (password.value == '') {
 		warning.innerHTML = 'Please Type the password';	
 	}
@@ -30,12 +31,12 @@ btn_signin.addEventListener('click',(e) => {
 });
 
 btn_signup.addEventListener('click',(e) => {
-	e.preventDefault();
-	if (password.value == '') {
-		warning.innerHTML = 'Please Type the password';	
+
+	if (password1.value == '') {
+		document.getElementById('warning1').innerHTML = 'Please Type the password';	
 	}
 	else {
-		warning.innerHTML = '';
+		document.getElementById('warning1').innerHTML = '';
 	}
 
 	
