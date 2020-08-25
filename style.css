@@ -245,5 +245,6 @@ footer p {
 
 #warning {
 	color: red;
-	
+	font-size: 15px;
+	font-style: oblique;
 }
