@@ -9,6 +9,32 @@
     crossorigin="anonymous">
 </head>
 <body>
+  <button type="button" class="btn btn-success m-3" id="btnStart">Start Election</button>
+  <!-- Button trigger modal -->
+<button type="button" class="btn btn-danger" data-toggle="modal" data-target="#staticBackdrop" id="btnEnd">
+  End Election
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog  modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Election Ended!</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Check for Results
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+  
+
   <div class="container">
     <ul class="nav nav-tabs" id="myTab" role="tablist">
       <li class="nav-item" role="presentation">
@@ -16,6 +42,10 @@
       </li>
       <li class="nav-item" role="presentation">
         <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Voters List</a>
+      </li>
+      <li class="nav-item" role="presentation">
+        <a class="nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Results</a>
+
       </li>
     </ul>
 
@@ -37,7 +67,7 @@
                   <input type="text" id="des" class="form-control" placeholder="Candidate's Details">
                 </div>
               </div>
-              <button type="button" class="btn btn-info my-3" id="btnGen">Add Candidate</button>
+              <button type="button" class="btn btn-success my-3" id="btnGen">Add Candidate</button>
             </form>
            
           
@@ -113,15 +143,21 @@
       <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
         Voters
       </div>
+      <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+        Results are not out yet
+      </div>
+
       
     </div>
   </div>
    <footer>
     <p>Created by Indian Election Commission @2020</p>   
   </footer>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-<script src="https://kit.fontawesome.com/aecf355847.js" crossorigin="anonymous"></script>
-<script src="/test2.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/aecf355847.js" crossorigin="anonymous"></script>
+<script src="/admin.js"></script>
+
 </body>
 </html>

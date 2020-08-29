@@ -1,7 +1,8 @@
 
 
 
-    var addCols = function (num){
+
+  var addCols = function (num){
         for (var i=1;i<=num;i++) {
             var candidateName = $('#name').val();
             var des = $('#des').val();
@@ -26,3 +27,28 @@
         return false;
         });
         
+        const start = document.getElementById('btnStart');
+        const end = document.getElementById('btnEnd');
+        
+
+        
+localStorage.clear();
+
+ start.addEventListener('click', (e) => {
+      e.preventDefault();
+      start.hidden = true;
+      localStorage.setItem('value',true);
+  });
+  
+  end.addEventListener('click', (e) => {
+            e.preventDefault();
+            start.hidden = false;
+            started = false;
+            localStorage.setItem('value1',false); 
+            
+          });
+          
+          
+
+       
+

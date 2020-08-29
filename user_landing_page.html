@@ -10,10 +10,12 @@
 <body>
     <header class="container">
         <h1>Cast Your Vote</h1>
+        <button id="avi">check</button>
+        <h3 style="text-align: center;">Election Not Started Yet</h3>
     </header>
     <div class="container">
         <div class="row row-cols-1 row-cols-md-3">
-            <div class="col mb-4">
+            <div class="col mb-4" id="c">
               <div class="card shadow-lg bg-white rounded-lg">
                 <div class="icon">
                     <svg width="15em" height="15em" viewBox="0 0 16 16" class="bi bi-file-person" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -25,7 +27,7 @@
                 <div class="card-body">
                   <h4 class="card-title">Candidate 1</h4>
                   <p class="card-text">Candidate Descriptions</p>
-                  <p class="card-text"><button type="button" class="btn btn-success">Vote</button></p>
+                  <p class="card-text"><button type="button" class="btn btn-success" id="btnC" disabled="disabled">Vote</button></p>
                 </div>
               </div>
             </div>
@@ -41,7 +43,7 @@
                 <div class="card-body">
                   <h4 class="card-title">Candidate 2</h4>
                   <p class="card-text">Candidate Descriptions.</p>
-                  <p class="card-text"><button type="button" class="btn btn-success">Vote</button></p>
+                  <p class="card-text"><button type="button" class="btn btn-success" id="btnC" disabled="disabled" >Vote</button></p>
                 </div>
               </div>
             </div>
@@ -57,7 +59,7 @@
                 <div class="card-body">
                   <h4 class="card-title">Candiate 3</h4>
                   <p class="card-text">Candidate Descriptions</p>
-                  <p class="card-text"><button type="button" class="btn btn-success">Vote</button></p>
+                  <p class="card-text"><button type="button" class="btn btn-success" disabled="disabled">Vote</button></p>
                 </div>
               </div>
             </div>
@@ -73,7 +75,7 @@
                 <div class="card-body">
                   <h4 class="card-title">Candidate 4</h4>
                   <p class="card-text">Candidate Descriptions</p>
-                  <p class="card-text"><button type="button" class="btn btn-success">Vote</button></p>
+                  <p class="card-text"><button type="button" class="btn btn-success" disabled="disabled">Vote</button></p>
                 </div>
               </div>
             </div>
@@ -82,5 +84,9 @@
     <footer class="container rounded">
         <p>Created by Indian Election Commission @2020</p>		
     </footer>
+    <script src="/user.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  
 </body>
 </html>
